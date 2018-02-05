@@ -5,6 +5,8 @@ RUN apt-get update \
     pandoc \
     texlive \
     texlive-latex-extra \
+    texinfo \
+    imagemagick \
   && rm -rf /var/lib/apt/lists/*
 
 RUN Rscript -e 'install.packages("bookdown")'
